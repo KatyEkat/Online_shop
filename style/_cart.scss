@@ -1,0 +1,234 @@
+button:hover{
+    color: white;
+    background-color: $color-select;
+}
+
+.top-cart{
+    height: 400px;
+    background-image: url(../img/cart/foon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cart{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: $gap;
+    margin-top: 64px;
+
+    &_name-box{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    &_item{
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    img{
+        width: 173px;
+    }
+
+    &_left{
+        flex-wrap: wrap;
+        display: flex;
+        gap: $gap;
+        align-items: stretch;
+    }
+
+    &_info{
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    &_form{
+        background: #F7F6F6;
+        border-radius: 20px;
+        height: 556px;
+        grid-column: span 4;
+    }
+
+    &_content{
+        grid-column: span 8;
+    }
+
+    &_link{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 210%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-decoration-line: underline;
+        color: $color-select;
+        gap: 30px;
+        text-decoration: none;
+    }
+
+    .input_number{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 210%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 71px;
+        height: 51px;
+        background: #F7F6F6;
+        border-radius: 6px;
+    }
+}
+
+
+button{
+    width: 200px;
+    height: 37px;
+    border: 1px solid $color-select;
+    box-sizing: border-box;
+    border-radius: 50px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-select;
+}
+.button_main{
+    transition: all $transition;
+}
+
+button:hover {
+    color: white;
+    background-color: $color-select;
+}
+
+.cart_form{
+    
+    &_text{
+        display: flex;
+        justify-content: center;
+        margin-top: 42px;
+        margin-bottom: 35px;
+        align-content: center;
+    }
+
+    &_data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &_data_name{
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #000;
+        width: 288px;
+        background: #F7F6F6;
+        margin-bottom: 61px;
+    }
+
+    input::-webkit-input-placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+
+    .total{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &_text{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: $color-select;
+            margin-bottom: 18px;
+        }
+
+        &__button{
+            transition: all $transition;
+
+        }        
+    }
+
+    &_link-box{
+        display: flex;
+        gap: 30px;
+        text-decoration: none;
+    }
+    
+    &_link_text{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 210%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-decoration-line: underline;
+        color: $color-select;
+    }
+
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+.total{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &_text{
+       font-family: 'Montserrat';
+       font-style: normal;
+       font-weight: 400;
+       font-size: 24px;
+       line-height: 29px;
+       color: $color-select;
+    }
+}
+
+.total__button{
+    animation: slide-right 1.5s linear infinite alternate both;
+}
+
+.cart_link_text{
+     color: $color-select;
+     text-decoration: none;
+}
+
+.cart_link_text:hover{
+    border-bottom: 1px solid #888;
+}
+
+
+ 
